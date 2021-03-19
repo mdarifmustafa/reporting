@@ -1,0 +1,67 @@
+.Bar {
+  position: absolute;
+  z-index: 10;
+  width: 50px;
+  min-height: calc(68px + 68px);
+  background-color: #ffd300;
+  bottom: 0;
+  right: 0;
+  transform: translateX(25px);
+  border-radius: 10px 10px 0 0;
+  overflow: none;
+}
+
+/* .BarTotal {
+  transform: rotate(90deg) translateX(20px);
+} */
+
+.BarTotal,
+.BarRecovered,
+.BarDeath {
+  position: absolute;
+  width: 100%;
+  color: transparent;
+}
+
+.BarTotal {
+  z-index: 10;
+  /* transform: rotate(90deg) translateX(20px); */
+  background-color: #ffd300;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  overflow: none;
+}
+
+.BarRecovered {
+  z-index: 20;
+  background-color: #50c878;
+  /* height: calc(60%); */
+  bottom: 0;
+  left: 0;
+}
+
+.BarDeath {
+  z-index: 20;
+  background-color: #ea3c53;
+  height: 10%;
+  /* bottom: calc(60%); */
+  left: 0;
+}
+
+.BarFlash {
+  position: absolute;
+  width: 130px;
+  height: 75px;
+  background-color: #000;
+  left: calc(100% + 30px);
+  border: 1px solid #fff;
+  border-radius: 10px;
+  z-index: 50;
+  color: white;
+}
+
+.bar-flash-content > * {
+  font-size: 14px;
+  letter-spacing: 0.75px;
+  color: #fff;
+}

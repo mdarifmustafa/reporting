@@ -1,0 +1,73 @@
+.matrix {
+  position: relative;
+  transform: translateX(40px);
+  overflow: hidden;
+}
+
+/* .matrix-cell {
+  opacity: 0.8;
+}
+
+.matrix-cell span {
+  opacity: 1;
+} */
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.first-row.first-col {
+  border-bottom: 0.5px solid #aaa;
+}
+
+.first-row:not(.first-col) {
+  border-top: 0.5px solid #aaa;
+  border-bottom: 0.5px solid #aaa;
+}
+
+.first-col:not(.last-row) {
+  width: 16px !important;
+  border-right: 0.5px solid #aaa;
+}
+
+.not-first-row {
+  border-bottom: 0.5px solid #aaa;
+}
+
+.not-first-col {
+  border-right: 0.5px solid #aaa;
+}
+
+.last-row.first-col {
+  width: 16px !important;
+  height: 16px !important;
+  border-right: 0.5px solid transparent;
+  border-bottom: 0.5px solid transparent;
+}
+
+.last-row:not(.first-col) {
+  height: 16px !important;
+  border-bottom: 0.5px solid transparent;
+}
+
+.last-row.last-col {
+  border-right: 0.5px solid transparent;
+}
+
+.first-col.second-last-row {
+  border-bottom: 0.5px solid transparent;
+}
+
+.last-row span {
+  transform: translate(20px, 20px);
+  text-align: center;
+}
+
+.first-col span {
+  text-align: left;
+}
+
+.matrix-cell.not-first-row.not-first-col.second-last-row {
+  position: relative;
+  overflow: visible;
+}
